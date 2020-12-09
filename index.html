@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+
+    <link rel="stylesheet" href="node_modules/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="node_modules/primeicons/primeicons.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="node_modules/codemirror/lib/codemirror.js"></script>
+    <script src="node_modules/codemirror/mode/markdown/markdown.js"></script>
+  </head>
+  <body>
+    <div id="buttons">
+      <button class="btn" id="button-new">
+        <i class="pi pi-file"></i> New
+      </button>
+      <button class="btn" id="button-open">
+        <i class="pi pi-folder"></i> Open
+      </button>
+      <button class="btn" id="button-save">
+        <i class="pi pi-save"></i> Save
+      </button>
+    </div>
+
+    <div id="metadata">
+      <div class="input-group">
+        <label for="input-title">Title:</label>
+        <input id="input-title" type="text">
+      </div>
+      <div class="input-group">
+        <label for="input-date">Date:</label>
+        <input id="input-date" type="text">
+      </div>
+      <div class="input-group">
+        <label for="input-description">Description:</label>
+        <input id="input-description" type="text">
+      </div>
+    </div>
+
+    <div id="editor"></div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>

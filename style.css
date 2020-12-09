@@ -1,0 +1,71 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  font-family: Arial;
+  color: #fff;
+  background: #3498db;
+  padding: 3px 10px 3px 10px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+  outline: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+.btn:active {
+  color: #ddd;
+  background-color: #12496b;
+}
+
+.btn:disabled {
+  background-color: #3498db;
+  opacity: 0.5;
+}
+
+#buttons {
+  background-color: #f7f7f7;
+  border-bottom: solid 1px #ddd;
+  padding: 10px;
+}
+
+.input-group {
+  margin: 0 0 5px;
+}
+
+.input-group label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  font-family: Arial;
+  font-size: 10pt;
+}
+
+.input-group input {
+  width: 80%;
+}
+
+#metadata {
+  background-color: #f7f7f7;
+  padding: 10px 5px 5px;
+  border-bottom: solid 1px #ddd;
+}
+
+#status {
+  background-color: #f7f7f7;
+  padding: 5px 8px;
+  border-top: solid 1px #ddd;
+  font-size: 8pt;
+  font-family: Arial;
+}

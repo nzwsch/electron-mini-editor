@@ -1,0 +1,44 @@
+{
+  "name": "electron-mini-editor",
+  "productName": "electron-mini-editor",
+  "version": "0.1.0",
+  "description": "A minimal Electron text editor",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "repository": "https://github.com/nzwsch/electron-mini-editor",
+  "keywords": [
+    "Electron"
+  ],
+  "author": "Seiichi Yonezawa",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin",
+            "linux"
+          ]
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.54",
+    "@electron-forge/maker-zip": "^6.0.0-beta.54",
+    "electron": "^11.0.4"
+  },
+  "dependencies": {
+    "codemirror": "^5.58.3",
+    "gray-matter": "^4.0.2",
+    "primeicons": "^4.1.0"
+  }
+}
